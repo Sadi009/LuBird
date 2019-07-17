@@ -1,0 +1,13 @@
+
+<app-header></app-header>
+<br><br>
+<div class="container" style="text-align: center;">
+    <div class="row">
+        <div class="col-md-4"
+        *ngFor="let contentList of contents">
+            <app-home-content 
+            [contents]="contentList"></app-home-content>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

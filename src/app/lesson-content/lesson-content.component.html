@@ -1,0 +1,31 @@
+<!-- <video controls src=" https://www.youtube.com/watch?v=9RG3MiEBEIw"></video> -->
+
+<!-- <div ng-repeat="media in product.media">
+    <div class="thumbnail">
+        <div class="video-container">
+            <iframe width="100%" src="https://www.youtube.com/watch?v=BTF5WrKj2mY" frameborder="0 " allowfullscreen></iframe>
+        </div>
+    </div>
+</!--> 
+<!-- <iframe width="100%" src="https://www.youtube.com/watch?v=BTF5WrKj2mY" frameborder="0 " allowfullscreen></iframe> -->
+<app-header></app-header>
+<div class="container"
+style="padding: 50px 20px">
+    <div class="row">
+        <div class="col-md-4">
+            <app-lesson-list></app-lesson-list>
+        </div>    
+        <div class="col-md-8">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
+
+
+<!-- <app-lesson-detail
+            *ngIf="selectedLesson; else infoText"
+            [lessonDetail]="selectedLesson"></app-lesson-detail>
+            <ng-template #infoText>
+                Welcome to lu-bird
+            </ng-template>  -->

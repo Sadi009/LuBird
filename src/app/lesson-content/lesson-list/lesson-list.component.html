@@ -1,0 +1,18 @@
+<h4>Lessons</h4>
+
+<div class="list-group" routerLink="/lessons">
+    <div class="list-group-item">
+        Introduction
+    </div>
+</div>
+<hr>
+<app-lesson-item
+*ngFor="let lessonList of lessons; let i = index"
+[lessons]="lessonList"
+[index]="i"></app-lesson-item>
+
+<!-- <div class="row">
+    <div class="col-sm-12" *ngFor="let lessonList of lessons">
+        {{ lessonList.description }}
+    </div>
+</div> -->
